@@ -1,23 +1,42 @@
 <IDOCTYPE html>
     <html 1ang="en">
 
-    <head>
-        <div>
-            <title>Document</title>
-            <img src="lion.png" alt="#" width="200px">
-            <h1>Air Quality Index</h1>
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index</title>
+</head>
+
+<body style="text-align: center;">
+    <div class="Logo-text">
+        <img src="23.jpg" alt="#" width="150px">
+        <h1 style="color:rgb(0, 0, 0);">Air Quality Index Application</h1>
+    </div>
+
+    <div style="display: flex; justify-content: center; margin-top: 20px;">
+        <div style="width: 400px; height: 600px; border: 1px solid black; display: flex; flex-direction: column;">
+            <div style="height: 300px; border-bottom: 1px solid black;"></div>
+            <div style="height: 300px;"></div>
         </div>
 
-        <div style="background-color:rgb(176, 5, 5);">
-            <h2>Box1</h2>
-        </div>
-        <div style="background-color:rgb(41, 199, 49);">
-            <h2>Box2</h2>
-            <form> <input type="text" placeholder="User full name"><br>
+        <div style="width: 400px; height: 600px; border: 1px solid black; display: flex; flex-direction: column;">
+            <div style="height: 50px; border-bottom: 1px solid black;">
+                <h2 style="color:rgb(56, 91, 126);">Registration Box</h2>
+
+            <form> 
+                
+                <label for="text">Name:</label>
+                <input type="text" placeholder="User full name"><br>
+                <label for="text">Email:</label>
                 <input type="email" name="uemail" placeholder="example@example.com"><br>
+                <label for="text">Enter Passord:</label>
                 <input type="password" name="upass" placeholder="enter password"><br>
+                <label for="text">Confirm Password:</label>
                 <input type="password" name="upass" placeholder="Confirm password"><br>
+                <label for="text">Location:</label>
                 <input type="location" placeholder="enter location"><br>
+                <label for="text">Zip Code:</label>
                 <input type="zip code" placeholder="zip code"><br>
 
                 <label for="List of prefer City">Choose a City:</label>
@@ -29,26 +48,22 @@
                     <option value="Comilla">Comilla</option>
                 </select>
 
-                <fieldset>
-                    <legend>Terms & Condition</legend><br>
-                    Agree<input type="radio" name="Terms & Condition" value="Agree">
-                    Disagree<input type="radio" name="Terms & Condition" value="Disagree">
-                        
-                        
-                    </fieldset>
-                    <button>SUBMIT</button>
+                <div class="tacbox">
+                    <input id="checkbox" type="checkbox" />
+                    <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.</label>
+                </div>
+                <button>Confirm</button>
 
 
         </div>
-        <div style="background-color:powderblue;">
-            <h2>BoX3</h2>
+        <div style="background-color:rgb(216, 224, 225);">
+    
         </div>
-        <div style="background-color:rgb(233, 11, 215);">
-            <h2>Box4</h2>
+        <div style="background-color:rgb(224, 215, 223);">
         </div>
-    </head>
+    </form>
 
-    <body>
+        <script src="code.js"></script>
     </body>
 
     </html>
